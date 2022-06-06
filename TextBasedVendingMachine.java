@@ -45,8 +45,10 @@ public class TextBasedVendingMachine implements VendingMachine {
 
     @Override
     public void enterCoins(int... coins) {
- // bu kısımda amaç change değeri hesaplanıyor.hesaplarken SimpleCalculator sınıfından calculateChange() metodu kullanılıyor
+        // bu kısımdaki amaç change değeri hesaplanıyor, hesaplarken SimpleCalculator
+        // sınıfından calculateChange() metodu kullanılıyor
         Calculator calculator = new SimpleCalculator();
+
         // TRICK ---> SimpleCalculator calculator = new SimpleCalculator();
         Product product = Product.valueOf(this.selectedProduct);
         int total = calculator.calculateTotal(new CoinBundle(coins));
@@ -68,3 +70,37 @@ public class TextBasedVendingMachine implements VendingMachine {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

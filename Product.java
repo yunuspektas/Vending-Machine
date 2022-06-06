@@ -1,7 +1,10 @@
 package VendingMechine;
 
 public enum Product {
-
+ // TRICK --- >
+ //Değişkenlerin alabileceği değerlerin sabit
+ // (belli) olduğu durumlarda programı daha okunabilir hale getirmek için kullanılır.
+ // Programda birçok değişkene tek tek sayısal değer vermek yerine "enum" kullanılabilir.
     TWIX(1,100), COKE(2,50), WATER(3,30), SANDWICH(4,150);
 
     private int id;
