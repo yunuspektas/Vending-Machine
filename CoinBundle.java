@@ -9,14 +9,12 @@ public class CoinBundle {
     public int number100CentsCoins ;
 
     public CoinBundle(int... enteredCoins) {
-
+        // 2 adet 50 cent girişi için örnek kullanıcı girişi : 0,0,0,2,0
         this.number5CentsCoins = enteredCoins[0];
         this.number10CentsCoins = enteredCoins[1];
         this.number20CentsCoins = enteredCoins[2];
         this.number50CentsCoins += enteredCoins[3];
-        //System.out.println("********" + this.number50CentsCoins);
         this.number100CentsCoins = enteredCoins[4];
-        //System.out.println("2********" + this.number50CentsCoins);
     }
 
     public int getTotal(){
