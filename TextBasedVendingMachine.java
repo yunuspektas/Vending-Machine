@@ -49,7 +49,7 @@ public class TextBasedVendingMachine implements VendingMachine {
         // sınıfından calculateChange() metodu kullanılıyor
         Calculator calculator = new SimpleCalculator();
 
-        // TRICK ---> SimpleCalculator calculator = new SimpleCalculator();
+        //SimpleCalculator calculator = new SimpleCalculator();
         Product product = Product.valueOf(this.selectedProduct);
         int total = calculator.calculateTotal(new CoinBundle(coins));
         int changeAmount = total - product.getPrice();

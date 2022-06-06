@@ -9,7 +9,7 @@ public class CoinBundle {
     public int number100CentsCoins ;
 
     public CoinBundle(int... enteredCoins) {
-        // 2 adet 50 cent girişi için örnek kullanıcı girişi : 0,0,0,2,0
+        // 2 adet 50 cent girişi için örnek kullanıcı girişi :
         this.number5CentsCoins = enteredCoins[0];
         this.number10CentsCoins = enteredCoins[1];
         this.number20CentsCoins = enteredCoins[2];
