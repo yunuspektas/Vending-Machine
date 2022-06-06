@@ -17,6 +17,7 @@ public class Main {
 
         vendingMachine.displayEnterCoinsMessage();
 
+        // girilen coinler String olarak alınıyor
         String userEnteredCoins = scanner.nextLine();
 
         int [] enteredCoins = Coin.parseCoins(userEnteredCoins);

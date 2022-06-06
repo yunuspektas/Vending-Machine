@@ -13,6 +13,7 @@ public enum Coin {
         return value;
     }
 
+    // girilen coinler String olarak alındığı için yani text şeklinde girilen 0,0,2,0,0 gibi değerleri ilgili coinlere int olarak set ediyor
     public static int[] parseCoins(String coins) {
         String[] numberCoinsInText = coins.split(",");
         int[] result = new int[numberCoinsInText.length];

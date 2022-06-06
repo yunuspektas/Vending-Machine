@@ -5,6 +5,7 @@ public enum Product {
  //Değişkenlerin alabileceği değerlerin sabit
  // (belli) olduğu durumlarda programı daha okunabilir hale getirmek için kullanılır.
  // Programda birçok değişkene tek tek sayısal değer vermek yerine "enum" kullanılabilir.
+
     TWIX(1,100), COKE(2,50), WATER(3,30), SANDWICH(4,150);
 
     private int id;
@@ -23,8 +24,9 @@ public enum Product {
         return price;
     }
 
+    // kullanıcının girdiği indexe uyan product ı döndüren metod
     public static Product valueOf ( int productSelected) {
-        for (Product product: Product.values()) {
+        for (Product product: Product.values()) {   // values() methodu sabit değişkenleri sirasıyla döndüren method
             if(productSelected == product.getId() ) {
                 return product ;
             }
